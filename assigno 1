@@ -1,0 +1,43 @@
+1. Hello World Program in Java
+public class HelloWorld {
+ public static void main(String[] args) {
+ System.out.println("Hello, World!");
+ }
+}
+2. Program to Add Two Numbers (x = 5, y = 7)
+public class AddTwoNumbers {
+ public static void main(String[] args) {
+ // Declare and initialize variables
+ int x = 5;
+ int y = 7;
+ // Calculate the sum
+ int sum = x + y;
+ // Print the result
+ System.out.println("The sum of x and y is: " + sum);
+ }
+}
+3. Employee Bonus Program in Java
+import java.util.Scanner;
+public class EmployeeBonusCalculator {
+ public static void main(String[] args) {
+ // Hardcoded salary and years of service
+ double salary = 50000; // You can modify this value
+ int yearsOfService = 7; // You can modify this value
+ // Initialize bonus percentage
+ double bonusPercentage = 0;
+ // Determine the bonus percentage based on years of service
+ if (yearsOfService > 10) {
+ bonusPercentage = 12;
+ } else if (yearsOfService >= 6 && yearsOfService <= 10) {
+ bonusPercentage = 10;
+ } else if (yearsOfService < 6) {
+ bonusPercentage = 8;
+ }
+ // Compute the bonus amount
+ double bonusAmount = (salary * bonusPercentage) / 100;
+ // Print the result
+ System.out.println("Salary: $" + salary);
+ System.out.println("Years of Service: " + yearsOfService);
+ System.out.println("Bonus Percentage: " + bonusPercentage + "%");
+ System.out.println("Net Bonus Amount: $" + bonusAmount);
+}}
